@@ -35,7 +35,7 @@ export const Header = (): JSX.Element => {
           onClick={() => setIsMenuOpen(false)}
         >
           <img
-            className="w-[200px]"
+            className="w-[175px] sm:w-[200px]"
             alt="Group"
             src="/images/logo.svg"
           />

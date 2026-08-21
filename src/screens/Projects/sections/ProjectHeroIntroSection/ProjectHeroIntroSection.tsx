@@ -11,7 +11,7 @@ export const ProjectHeroIntroSection = (): JSX.Element => {
     <section className="relative w-full px-5 pt-16 pb-16 sm:px-8 lg:px-20 lg:pt-[72px] lg:pb-[100px]">
       <div className="mx-auto flex w-full max-w-[calc(1440px-10rem)] flex-col items-start gap-14 lg:gap-20">
         <div className="flex w-full flex-col items-start gap-12">
-          <div className="flex w-full flex-col items-start gap-8 w-[86%]">
+          <div className="flex w-full flex-col items-start gap-8 sm:w-[86%]">
             <h1 className="[font-family:'Google_Sans_Flex',Helvetica] w-full text-[44px] font-normal leading-[1.1] tracking-[-1.2px] text-[#363535] sm:text-[56px] md:text-[68px] lg:text-[80px] lg:leading-[96px] lg:tracking-[-2px]">
               Our work
             </h1>

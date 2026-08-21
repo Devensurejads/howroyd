@@ -30,7 +30,7 @@ export const HeroSection = (): JSX.Element => {
     <>
       <section className="relative flex w-full self-stretch px-5 pt-16 pb-[100px] sm:px-8 lg:px-20 lg:pt-[100px]">
         <div className="mx-auto flex w-full max-w-[calc(1440px-10rem)] flex-col items-start gap-12 lg:gap-12">
-          <div className="flex w-full flex-col items-start gap-8 w-[86%]">
+          <div className="flex w-full flex-col items-start gap-8 sm:w-[86%]">
             <h1 className="[font-family:'Google_Sans_Flex',Helvetica] text-[42px] font-normal leading-[1.12] tracking-[-1.5px] text-[#363535] sm:text-[56px] lg:text-[80px] lg:leading-[96px] lg:tracking-[-2px]">
               Helping organisations deliver successful digital projects
             </h1>
