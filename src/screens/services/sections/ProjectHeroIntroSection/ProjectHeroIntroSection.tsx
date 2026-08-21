@@ -42,7 +42,7 @@ export const ProjectHeroIntroSection = (): JSX.Element => {
     <section className="relative w-full px-5 pt-16 pb-16 sm:px-8 lg:px-20 lg:pt-[72px] lg:pb-[100px]">
       <div className="mx-auto flex w-full max-w-[calc(1440px-10rem)] flex-col items-start gap-14 lg:gap-20">
         <div className="flex w-full flex-col items-start gap-12">
-          <div className="flex w-full flex-col items-start gap-8 w-[86%]">
+          <div className="flex w-full flex-col items-start gap-8 sm:w-[86%]">
             <h1 className="[font-family:'Google_Sans_Flex',Helvetica] text-[44px] font-normal leading-[1.1] tracking-[-1.2px] text-[#363535] sm:text-[56px] md:text-[68px] lg:text-[80px] lg:leading-[96px] lg:tracking-[-2px]">
               Thoughtful advice supported by dependable delivery
             </h1>
@@ -75,7 +75,7 @@ export const ProjectHeroIntroSection = (): JSX.Element => {
               className="flex flex-col items-start gap-4 text-left"
             >
               <img
-                className="aspect-[632/637] w-full max-w-[632px] object-cover"
+                className="aspect-[1/1] w-full max-w-[632px]"
                 alt={image.alt}
                 src={image.src}
               />
@@ -94,23 +94,34 @@ export const ProjectHeroIntroSection = (): JSX.Element => {
 
       {selectedService ? (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-[#00000066] p-4 sm:p-8"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-[#00000066] p-2 sm:p-8"
           onClick={(event) => {
             if (event.target === event.currentTarget) closeModal();
           }}
         >
-          <div className="relative my-8 flex w-full max-w-7xl flex-col rounded-lg border border-[#0000001a] bg-white sm:my-12 max-h-[85vh]">
+          <div className="relative my-8 flex w-full max-w-7xl flex-col rounded-lg border border-[#0000001a] bg-white sm:my-12 max-h-[95vh] sm:max-h-[85vh]">
             <button
               type="button"
               onClick={closeModal}
               aria-label="Close"
-              className="absolute right-5 top-5 text-[#363535] hover:opacity-60 sm:right-8 sm:top-8"
+              className="hidden text-[#363535] hover:opacity-60 sm:absolute sm:right-8 sm:top-8 sm:block"
             >
               <X className="h-6 w-6" />
             </button>
-            <div className="grid min-h-0 flex-1 grid-cols-1 gap-8 overflow-y-auto p-6 sm:p-10 md:grid-cols-[360px_1fr] md:gap-12 lg:grid-cols-[420px_1fr] lg:p-12">
+            <div className="flex min-h-0 flex-1 flex-col overflow-y-auto max-sm:[-ms-overflow-style:none] max-sm:[scrollbar-width:none] max-sm:[&::-webkit-scrollbar]:hidden">
+              <div className="sticky top-0 z-10 flex justify-end bg-white px-6 pt-16 pb-2 sm:hidden">
+                <button
+                  type="button"
+                  onClick={closeModal}
+                  aria-label="Close"
+                  className="text-[#363535] hover:opacity-60"
+                >
+                  <X className="h-6 w-6" />
+                </button>
+              </div>
+              <div className="grid grid-cols-1 gap-8 p-6 pt-0 sm:p-10 md:grid-cols-[360px_1fr] md:gap-12 lg:grid-cols-[420px_1fr] lg:p-12">
               <img
-                className="aspect-[632/637] w-full max-w-[632px] object-cover"
+                className="aspect-[1/1] w-full max-w-[632px]"
                 alt={selectedService.alt}
                 src={selectedService.src}
               />
@@ -202,6 +213,7 @@ export const ProjectHeroIntroSection = (): JSX.Element => {
                 <p className="[font-family:'Google_Sans_Flex',Helvetica] text-xl font-normal leading-[1.4] text-[#363535]">
                   {selectedService.closing}
                 </p>
+              </div>
               </div>
             </div>
           </div>

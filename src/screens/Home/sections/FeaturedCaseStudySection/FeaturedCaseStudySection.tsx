@@ -49,7 +49,7 @@ export const FeaturedCaseStudySection = (): JSX.Element => {
     <section className="relative w-full bg-[#00000008] px-5 py-16 sm:px-8 md:px-12 lg:px-20 lg:py-[120px]">
       <div className="mx-auto flex w-full max-w-[calc(1440px-10rem)] flex-col gap-16">
         <header className="flex w-full flex-col gap-6 md:flex-row md:items-end md:justify-between">
-          <h2 className="max-w-[60%] [font-family:'Google_Sans_Flex',Helvetica] text-[40px] font-normal leading-[1.15] tracking-[-2px] text-[#363535] sm:text-[48px] lg:text-[64px] lg:leading-[76.8px]">
+          <h2 className="sm:max-w-[60%] [font-family:'Google_Sans_Flex',Helvetica] text-[40px] font-normal leading-[1.15] tracking-[-2px] text-[#363535] sm:text-[48px] lg:text-[64px] lg:leading-[76.8px]">
             Thoughtful advice backed by practical delivery
           </h2>
           <Link to="/services">

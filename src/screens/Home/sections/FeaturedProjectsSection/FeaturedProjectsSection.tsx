@@ -55,11 +55,11 @@ export const FeaturedProjectsSection = (): JSX.Element => {
             Sustained by long-term relationships
           </h2>
         </header>
-        <div className="flex w-full flex-col gap-8 lg:gap-12">
+        <div className="flex w-full flex-col gap-14 lg:gap-12">
           {testimonialRows.map((row, rowIndex) => (
             <div
               key={`testimonial-row-${rowIndex}`}
-              className="grid w-full grid-cols-1 gap-6 md:grid-cols-3 md:gap-8"
+              className="grid w-full grid-cols-1 gap-14 md:grid-cols-3 md:gap-8"
             >
               {row.map((testimonial, itemIndex) => (
                 <div
